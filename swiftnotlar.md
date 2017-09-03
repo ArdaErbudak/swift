@@ -1,16 +1,16 @@
-Bu notlarda Kullanilan Kaynak;
+Bu notlarda Kullanılan Kaynak;
 
-https:developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/
+https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/
 
-Oncelikle Swift nedir ondan bahsetmek istiyorum. Swift iOS, macOS, watchOs ve tvOS icin uygulama gelistirmede kullanilan Apple tarafindan gelistirilmis yazilim turudur.
+Öncelikle Swift nedir ondan bahsetmek istiyorum. Swift iOS, macOS, watchOs ve tvOS icin uygulama geliştirmede kullanılan Apple tarafından geliştirilmiş yazılım türüdür.
  Swift'in bir cok bolumu C ve Objective-C'de yaptiklarinizdan tanidik gelecektir.
 
 
-Kodlara ornek vermek icin klasik "Hello World" terimini kullanalim.
+Kodlara örnek vermek için klasik "Hello World" terimini kullanalım.
 
-print("Hello, world") seklinde yazabiliriz.
+print("Hello, world") şeklinde yazabiliriz.
 
-Veya String birlestirerek de yazilabilir.
+Veya String birlestirerek de yazılabilir.
 
 var helloString = "Hello"
 var worldString = "World"
@@ -18,37 +18,39 @@ var commaString = ", "
 print(helloString + commaString + worldString);
 
 
-Degiskenler ?
+Değişkenler ?
 
-Sabit degiskenler (constant) let, degiskenler (variable) var ile tanimlanir. Sabit degiskenlere bir deger atanir ve kodun cesitli yerlerinde kullanilabilir.
+Sabit değişkenler (constant) let, değişkenler (variable) var ile tanımlanır. Sabit değişkenlere bir değer atanır ve kodun çeşitli yerlerinde kullanılabilir.
 
 var Degisken = 42
-Degisken = 50
+Değişken = 50
 let SDegisken = 42
 
-Swift’te degiskeni tipini belirtmeden tanimlayabiliyoruz. Derleyici o degiskene atadigimiz ilk degerde o degiskenin tipini belirliyor. var myVariable dedigimizde myVariable‘in tipi belli degildir. myVariable = 50 dedigimizde derleyici myVariable degiskeninin tipini integer olarak ayarlar.
+Swift’te değişkeni tipini belirtmeden tanımlayabiliyoruz. Derleyici o değiskene atadığımız ilk değerde o deiğişkenin tipini belirliyor. var myVariable dediğimizde myVariable‘in tipi belli değildir. myVariable = 50 dediğimizde derleyici myVariable değişkeninin tipini integer olarak ayarlar.
 
-Degiskenin ilk degeri degiskenin tipinin belirlenmesinde yeterli bilgi icermiyorsa asagidaki gibi bir kullanimlar kendimiz ayarlayabiliriz. (Explicit kullanim)
+Değişkenin ilk değeri değişkenin tipinin belirlenmesinde yeterli bilgi içermiyorsa aşağıdaki gibi bir kullanımlar kendimiz ayarlayabiliriz. (Explicit kullanım)
 
 let explicitDouble: Double = 70
 
-explicitDouble sabit degiskeninin tipi Double olarak ayarlaniyor.
+explicitDouble sabit değişkeninin tipi Double olarak ayarlanıyor.
 
-Degiskenler Sting icinde \() ile yazilir.(Rubydeki #{} gibi)
+Değişkenler Sting içinde \() ile yazılır.(Rubydeki #{} gibi)
+
+Örnek;
 
 let apples = 3
 let oranges = 5
 let appleSummary = "I have \(apples) apples."
 let fruitSummary = "I have \(apples + oranges) pieces of fruit."
 
-Bu koda cikti olarak I have 3 apples ve I haves 8 pieces of fruit seklinde string verecek bize.
+Bu koda çıktu olarak I have 3 apples ve I haves 8 pieces of fruit seklinde string verecek bize.
 
 
 Arrayler ve Dictionaryler
 
-Yazarken [] kullaniyoruz/.
+Yazarken [] kullanıruz/.
 
-Ornek 
+Örnek 
 
 var alinacaklar = ["mama", "peceteler", "hoparlor", "fotokopi kagidi"]
 alinacaklar[1] = "kolonya"
@@ -60,28 +62,28 @@ var meslekler = [
 meslekler["Kerim"] = "Petshop"
 
 
-alinacaklar[1] = "kolonya" burada kolonya dan kac tane alacagimizi int olarak belirttik.
+alinacaklar[1] = "mama" burada mama dan kaç tane alacağımızı int olarak belirttik.
 
 "Enes": "Denizci",
 "Osman": "Reklamci",
 
-Burada Enesi Denizci, Osmani Reklamci olarak tanimladik.
+Burada Enesi Denizci, Osmani Reklamci olarak tanımladık.
 
 meslekler["Kerim"] = "Petshop" burada yeni eleman ekledik.
 
-Bos array ve dictionary olusturulmasi:
+Boş array ve dictionary olusturulması:
 
 let emptyArray = [String]()
 let bosDictionary = Dictionary<String, Float>()
 
-koseli parantez icinde tipini belirtiyoruz.
+köşeli parantez icinde tipini belirtiyoruz.
 
 
 Temel Array Tipleri
 
-Temel degiskenleri tipini belirterek (explicit) veya belirtmeden (implicit) tanimlayabiliyoruz. Kesirli sayilar icin Double ve Float‘i, boolean degerler icin (true/false olabilir) Bool‘u kullaniyoruz.
+Temel değişkenleri tipini belirterek (explicit) veya belirtmeden (implicit) tanımlayabiliyoruz. Kesirli sayılar için Double ve Float‘i, boolean değerler için (true/false olabilir) Bool‘u kullanıyoruz.
 
-Ornek verelim;
+Örnek verelim;
 
 let freedom1 = 4.99
 let freedom1Explicit: Double = 7.99
@@ -96,11 +98,11 @@ let sunucu = "KodBilenFamily"
 let sunucuExplicit: String = "KodBilenFamily"
 
 
-Kontrol durumlari
+Kontrol durumları
 
-Kontrol durumlarinda if ve switch, dongu icin for-in, for, while, and do-while kullanabiliriz. Parantez kullanimi opsiyonel birakilmis, kume parantezi kullanimi zorunlu.
+Kontrol durumlarında if ve switch, döngü için for-in, for, while, and do-while kullanabiliriz. Parantez kullanımı opsiyonel bırakılmış, küme parantezi kullanımı zorunlu.
 
-Ornek;
+Örnek;
 
 var skor = 52
 var takimSkoru = 0
@@ -113,14 +115,14 @@ if skor > 50 {
  
 print(takimSkoru);
 
-burada skoru 52 olarak atadik, takim skorunu ise 0 olarak atadik ve sunu dedik;
-Eger skor 50'den buyukse takim skorunun mevcut skoru + 3 olarak verdik.
-Baska bir durum soz konusu ise (esitlik veya kucuk olmasi gibi{enes tsk}) mevcut sayiya 1 ekleyecek.
-En sonda Takim skorunu yazacak. Skoru 52 atadigimiz icin cikti da bize 3 verecek.
+burada skoru 52 olarak atadık, takım skorunu ise 0 olarak atadık ve şunu dedik;
+Eğer skor 50'den büyükse takım skorunun mevcut skoru + 3 olarak verdik.
+Başka bir durum söz konusu ise (eşitlik veya küçük olması gibi) mevcut sayıya 1 ekleyecek.
+En sonda Takım skorunu yazacak. Skoru 52 atadığımız için çıktı da bize 3 verecek.
 
-Ayni degisken icin birden fazla if kontrolu yapilacagi durumlarda switch tercih edilebilir:
+Aynı değişken icin birden fazla if kontrolu yapılacağı durumlarda switch tercih edilebilir:
 
-Ornek;
+Örnek;
 
 let renk = "turuncu"
 var evRengi: String = "";
@@ -140,7 +142,7 @@ print(evRengi);
 
 --------
 
-interestingNumbers Dictionary tipi icindeki numaralari kontrol ederek en buyuk sayiyi ve o sayinin hangi dizi icinde oldugunu buluyor
+interestingNumbers Dictionary tipi içindeki numaraları kontrol ederek en büyük sayıyı ve o sayının hangi dizi içinde olduğunu buluyor
 
 let interestingNumbers = [
     "tekli": [2, 3, 5, 7, 11, 13],
@@ -162,12 +164,12 @@ for (tur, sayilar) in interestingNumbers {
 print(serie);
 print(sayi);
 
-Burada tekli sayilari, Fibonacci sayi dizisi ve Cift sayilari tanimladik.
-en buyuk sayiyi 0 olarak tanimladik ve eger sayi enbuyuk'den buyukse serie turle enbuyuk sayida sayi ile esitlenir. En son olarak serie ve sayi yazdirilir. yani Cift ve 25 yazar. 
+Burada tekli sayıları, Fibonacci sayı dizisi ve Çift sayılari tanımladık.
+en büyük sayıyı 0 olarak tanımladık ve eğer sayı enbuyuk'den buyükse serie turle, enbuyuk sayıda sayı ile eşitlenir. En son olarak serie ve sayi yazdırılır. yani Cift ve 25 yazar. 
 
-while ile do-While dongusu arasindaki fark; kodun while dongusune hic girmeme ihtimali olmasina ragmen, do-While dongusune en az bir kere girecek olmasidir. Bir baska deyisle while dongusunun statement’i false ise kod while dongusune hic girmeden calismaya donguden sonraki statement’tan devam edecektir. Ama do-While dongusunde bir kere dongunun icine girip ondan sonra while statement’ini kontrol edecegi icin en az bir kere donguye girmis olacaktir.
+while ile do-While döngüsü arasındaki fark; kodun while döngüsüne hiç girmeme ihtimali olmasına ragmen, do-While döngüsüne en az bir kere girecek olmasıdır. Bir baska deyişle while döngüsünün statement’i false ise kod while  hic girmeden çalışmaya döngüden sonraki statement’tan devam edecektir. Ama do-While döngüsünde bir kere döngünün içine girip ondan sonra while statement’ini kontrol edeceğ için en az bir kere döngüye girmiş olacaktır.
 
-Ornek;
+Örnek;
 
 var n = 2
 while n < 100 {
@@ -179,12 +181,13 @@ do {
     m = m * 2
 } while m < 100
 
-Burada n yi 2 ye esitledik. Ardindan n 100 den kucukse n yi n yi ikiyle carpiyor.
-Ar
+Burada n yi 2 ye eşitledik. Ardından n 100 den küçükkse n yi n yi ikiyle çarpıyor.
 
-Dongulerin index kullanarak asagidaki gibi bir kullanimi da olabilir. Her iki dongu de aynı isi yapmaktadir.
+Do kısmında 2 olan m yi m * 2 ye yani 2 * 2 eşitledik taki bu işlem m 100'e eşit olana veya büyüyene kadar.
 
-Ornek;
+döngülerin index kullanarak aşağıdaki gibi bir kullanımı da olabilir. Her iki döngü de aynı işi yapmaktadır.
+
+Örnek;
 
 	var firstForLoop = 0
 for i in 0..<4 {
@@ -196,7 +199,7 @@ for var i = 0; i < 4; ++i {
     secondForLoop += i
 }
 
-Loop olayini tam anlayamadim ornegi internetten buldum eksik kalmasin diye acikalayamadigim icin ozur dilerim.
+Loop olayını tam anlayamadım örneksiz kalmasın diye internetten bir örnek buldum diye açıklayamadığım için özür dilerim.
 
 
-3 gunde ogrenebildigim kadarini ogrendim. Umarim dogru anlatmisimdir KodBilen Tesekkurler Okdugun icin Kucuktur Uc.
+3 günde öğrenebildiğim kadarını öğrendim. Benim hatamdı senin verdiğin gün başlamadım ödev'e, ciddi olduğunu anlamamıştım özür dilerim bu konu hakkında. Projede kalırsam eğer tüm vaktimi ve dikkatimi ayıracağım. Umarım yeteri kadar doğru anlatmışımdır KodBilen Okduğun için teşekkürler Küçüktür Üç.
