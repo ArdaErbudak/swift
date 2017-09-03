@@ -3,7 +3,7 @@ Bu notlarda Kullanılan Kaynak;
 https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/
 
 Öncelikle Swift nedir ondan bahsetmek istiyorum. Swift iOS, macOS, watchOs ve tvOS icin uygulama geliştirmede kullanılan Apple tarafından geliştirilmiş yazılım türüdür.
- Swift'in bir cok bolumu C ve Objective-C'de yaptiklarinizdan tanidik gelecektir.
+ Swift'in bir çok bölümü C ve Objective-C'de yaptıklarınızdan tanıdıkk gelecektir.
 
 
 Kodlara örnek vermek için klasik "Hello World" terimini kullanalım.
